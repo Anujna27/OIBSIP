@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Tasks | To-Do App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="app-header">
+            <div>
+                <p class="eyebrow">MY PRODUCTIVITY SPACE</p>
+                <h1>My Tasks</h1>
+                <p class="subtitle">
+                    Plan it. Do it. Get it done.
+                </p>
+            </div>
+
+            <div class="date-display" id="date-display"></div>
+        </header>
+
+
+        <!-- Add Task -->
+        <section class="add-task-section">
+
+            <form id="task-form">
+
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="What needs to be done?"
+                    autocomplete="off"
+                >
+
+                <button type="submit" class="add-button">
+                    <span>+</span>
+                    Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Task Lists -->
+        <section class="tasks-container">
+
+            <!-- Pending Tasks -->
+            <div class="task-section">
+
+                <div class="section-header">
+                    <div>
+                        <p class="section-label">IN PROGRESS</p>
+                        <h2>Pending Tasks</h2>
+                    </div>
+
+                    <span class="task-count" id="pending-count">
+                        0 pending
+                    </span>
+                </div>
+
+                <div
+                    class="task-list"
+                    id="pending-list"
+                >
+                    <!-- Pending tasks will be added here -->
+                </div>
+
+                <div
+                    class="empty-state"
+                    id="pending-empty"
+                >
+                    <div class="empty-icon">✓</div>
+                    <h3>Nothing pending</h3>
+                    <p>
+                        You're all caught up. Add a new task to get started.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Completed Tasks -->
+            <div class="task-section completed-section">
+
+                <div class="section-header">
+                    <div>
+                        <p class="section-label">DONE & DUSTED</p>
+                        <h2>Completed Tasks</h2>
+                    </div>
+
+                    <span class="task-count completed-count" id="completed-count">
+                        0 completed
+                    </span>
+                </div>
+
+                <div
+                    class="task-list"
+                    id="completed-list"
+                >
+                    <!-- Completed tasks will be added here -->
+                </div>
+
+                <div
+                    class="empty-state"
+                    id="completed-empty"
+                >
+                    <div class="empty-icon">○</div>
+                    <h3>No completed tasks yet</h3>
+                    <p>
+                        Completed tasks will appear here.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Stay focused. One task at a time. ✦
+            </p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
