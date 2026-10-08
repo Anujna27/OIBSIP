@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SecureSpace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-page">
+
+        <header class="dashboard-header">
+
+            <div>
+                <p class="eyebrow">SECURESPACE</p>
+                <h1>Dashboard</h1>
+            </div>
+
+            <button
+                id="logout-button"
+                class="logout-button"
+            >
+                Logout
+            </button>
+
+        </header>
+
+
+        <section class="welcome-card">
+
+            <p class="section-label">WELCOME</p>
+
+            <h2>
+                Hello, <span id="dashboard-username">User</span>.
+            </h2>
+
+            <p>
+                You have successfully logged in to your protected dashboard.
+            </p>
+
+        </section>
+
+
+        <section class="dashboard-info">
+
+            <div class="info-card">
+
+                <span class="info-label">USERNAME</span>
+
+                <strong id="user-username">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-label">EMAIL</span>
+
+                <strong id="user-email">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-label">ACCOUNT STATUS</span>
+
+                <strong>Authenticated</strong>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>Your session is active.</p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
